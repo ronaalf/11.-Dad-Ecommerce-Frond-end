@@ -1,0 +1,209 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: thatone;
+}
+@font-face{
+	font-family: thatone;
+	src: url("../fonts/HuertaTipogrfica-AlegreyaSansSC-Regular.ttf");
+}
+.container{
+	display: grid;
+	grid-template-columns: 1f;
+	grid-template-rows: 2.2fr auto 1fr;
+
+}
+
+header{
+	background-image: linear-gradient(black 50%, rgb(41, 41, 41));
+}
+.header-fixed{
+	position: fixed;
+	background-color:black;
+	width: 100%;
+	top: 0px;
+	z-index: 2;
+}
+ul{
+	display: flex;
+	list-style-type: none;
+	justify-content: end;
+	padding: 20px;
+	align-items: center;
+	margin-right: 8.5%;
+}
+ul li{
+	color: white;
+	margin: 0px 38px;
+	font-size: large;
+	text-transform: uppercase;
+	font-family: thatone;
+	cursor: pointer;
+	letter-spacing: 2px;
+}
+.home-bottom{
+	background-color: #836b01;
+	padding: 10px;
+	border-radius: 5px;
+	transition: 0.6s ease-in-out;
+}
+.home-bottom:hover{
+	background-color: #70630acb;
+}
+.bottom:hover{
+	text-decoration-line: underline;
+}
+
+.img-container{
+	position: relative;
+	top: 100px;
+	left: 12.5%;
+	width: 75%;
+	height: 110%;
+}
+.layer-contrast{
+	background-color:black;
+	opacity: 20%;
+	height: 100%;
+	z-index: 1;
+	position: relative;
+	border-radius: 2px;
+}
+.img-container img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	border-radius: 2px;
+}
+
+/*****************************/
+section{
+	width: 75%;
+	margin: 0px auto;
+}
+.title-discounts:before{
+	content: "";
+	height: 111px;
+	display: block;
+}
+.title-discounts{
+	display: block;
+	text-align: center;
+	font-size: 27px;
+	margin: 65px 0 54px 0;
+	letter-spacing: 7px;
+}
+.three-containers{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	gap: 5px;
+}
+.first-container, .second-container, .third-container{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.384),rgba(0, 0, 0, 0.103));
+	width: 270px;
+	padding: 10px;
+	border-radius: 1px;
+	cursor: pointer;
+}
+.first-container img, .second-container img, .third-container img{
+	object-fit: cover;
+}
+.photo-one, .photo-two, .photo-three{
+	width: 99.7%;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	background-color: rgba(255, 255, 255, 0.438);
+	padding: 10px;
+	margin-top: 10px ;
+}
+.photo-one h1, .photo-two h1, .photo-three h1{
+	margin-bottom: 5px;
+}
+.price-container{
+	display: flex;
+	justify-content: space-between;
+	margin: 5px 0px 10px;
+	align-items: center;
+}
+.price-before{
+	color: red;
+}
+.price-before .beforeh{
+	display: inline-block;
+	margin-bottom: 5px;
+	position: relative;
+	left: -11px;
+}
+.price-after{
+	font-size: 25px;
+	background-color: #ffe016cb;
+	padding: 0px 10px 0px;
+}
+.star-picture{
+	padding: 10px;
+	background-color: white;
+	border-radius: 5px;
+	position: relative;
+	left: -11px;
+	object-fit: cover;
+}
+.buttons{
+	display: flex;
+	justify-content: space-between;
+}
+.see-more{
+	padding: 0px 12px;
+	color: #3E2BFF;
+	cursor: pointer;
+	border: none;
+	background-color: rgba(255, 255, 255, 0);
+	margin-left: 13px;
+	letter-spacing: 2px;
+}
+.buy{
+	padding: 10px 30px;
+	background-color:  #3E2BFF;
+	border-radius: 5px;
+	cursor: pointer;
+	border: none;
+	box-shadow: 2px 2px 5px black;
+	color: white;
+	font-weight: 500;
+	transition: 0.3s ease-in-out;
+	letter-spacing: 2px;
+}
+.see-more:hover{
+	text-decoration: underline;
+}
+.buy:hover{
+	box-shadow: none;
+	background-color:#0000B2;
+}
+.see-more-discounts-contaier{
+	display: flex;
+	justify-content: center;
+}
+.see-more-discounts-button{
+	margin: 50px 0px;
+	padding: 20px;
+	border: 2px solid #836b01;
+	color: #836b01;
+	background-color: white;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-size: 15px;
+}
+.see-more-discounts-button:hover{
+	cursor: pointer;
+	border: 2px solid #a18e0fcb;
+	color: #a18e0fcb;
+}
+/********************************/
+footer{
+	height: 150px;
+	background-color: black;
+	color:green;
+}
